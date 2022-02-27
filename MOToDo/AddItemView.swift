@@ -54,7 +54,7 @@ struct AddItemView: View {
                     }
                     if catagory == "dated" {
                         Section {
-                            DatePicker("Due Date", selection: $dateDue)
+                            DatePicker("Due Date", selection: $dateDue, in: Date.now..., displayedComponents: .date)
                         }
                     }
                 } // end form
